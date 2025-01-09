@@ -1,0 +1,3 @@
+use as a bookmarklet
+
+javascript:(function(){function getDomain(url){url=url.replace(/(^\w+:|^)\/\//,'');url=url.replace(/^www\./,'');let parts=url.split(' ')[0].split('.');return parts.slice(-2).join('.');}let elements=document.querySelectorAll('.infringing_url');let seenLinks=new Set();elements.forEach(element=>{let originalText=element.textContent.trim().toLowerCase();let domain=getDomain(originalText);if(/([a-zA-Z0-9-]+\.[a-zA-Z]{2,})/.test(originalText)){seenLinks.add(domain);}});document.body.innerHTML='';seenLinks.forEach(domain=>{let linkElement=document.createElement('p');linkElement.textContent=domain;document.body.appendChild(linkElement);});alert('All duplicate plain text links processed and removed! Only unique links are now on the page.');})();
