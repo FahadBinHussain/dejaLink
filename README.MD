@@ -1,5 +1,9 @@
 # DejaLink
 
+<img src="https://wakapi-qt1b.onrender.com/api/badge/fahad/interval:any/project:dejaLink" 
+     alt="Wakapi Time Tracking" 
+     title="Spent more than that amount of time spent on this project">
+
 A bookmarklet that removes duplicate plain text links and converts them to clickable links.
 
 ## What it Does
